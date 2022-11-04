@@ -9,9 +9,9 @@ const Lists = () => {
   }
   return info.map((element) => {
     return (
-      <div className="card">
-        <img src={element.logo} alt="" />
-        <div className="job">
+      <div className="list">
+        <img className="listImg" src={element.logo} alt="" />
+        <div className="theJob">
           <div className="lineOne">
             <span className="company">{element.company}</span>
             {element.new && <span className="new">NEW!</span>}
